@@ -20,4 +20,15 @@ function setPlanner() {
 // calls setPlanner function
 setPlanner();
 
+// saveBtn variable 
+var saveBtn = $(".saveBtn");
+
+// allows new schedule info to be saved to local storage
+saveBtn.on("click", function () {
+    var time = $(this).parent().attr("id");
+    var schedule = $(this).siblings(".schedule").val();
+
+    localStorage.setItem(time, schedule);
+});
+
 
