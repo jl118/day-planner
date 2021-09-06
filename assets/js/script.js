@@ -54,3 +54,13 @@ function pastPresentFuture() {
 
 // calls function
 pastPresentFuture();
+
+// clears the local storage and wipes the schedule
+$('#clear-btn').on('click', function() {
+    var clear = confirm('Are you sure you want to clear your calendar?');
+    if(clear === true) {
+        localStorage.clear();
+        $('textarea').val('');
+    };
+    
+});
