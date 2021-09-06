@@ -48,7 +48,7 @@ textarea {
 }
   
 .hour {
-    background-color: var(--lightest)f;
+    background-color: var(--lightest);
     color: var(--darkest);
     border-top: 1px dashed var(--darkest);
 }
