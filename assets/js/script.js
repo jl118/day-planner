@@ -8,7 +8,6 @@ function setPlanner() {
     // creates time slots for each hour with an id
     $(".time-block").each(function () {
         var id = $(this).attr("id");
-        console.log(id);
         var schedule = localStorage.getItem(id);
 
         if (schedule !== null) {
@@ -27,11 +26,11 @@ var saveBtn = $(".saveBtn");
 saveBtn.on("click", function () {
     var time = $(this).parent().attr("id");
     var schedule = $(this).siblings(".schedule").val();
-    console.log(schedule);
+    
     localStorage.setItem(time, schedule);
 });
 
-// function to update schedule based on real time
+// function to update schedule colors based on real time
 function pastPresentFuture() {
     // creating auto-updating hour variable
     hour = time.hours();
