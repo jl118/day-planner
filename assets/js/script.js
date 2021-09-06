@@ -4,7 +4,7 @@ var time = moment();
 // setPlanner function
 function setPlanner() {
     // sets current date format at top of the page beneath title
-    $("#current-date").text(moment().format("dddd, MMMM Do YYYY hh:mm a"));
+    $("#current-date").text(moment().format("dddd, MMMM Do YYYY h:mm a"));
     // creates time slots for each hour with an id
     $(".time-block").each(function () {
         var id = $(this).attr("id");
@@ -57,10 +57,9 @@ pastPresentFuture();
 
 // clears the local storage and wipes the schedule
 $('#clear-btn').on('click', function() {
-    var clear = confirm('Are you sure you want to clear your calendar?');
+    var clear = confirm('Are you sure you want to clear your schedule?');
     if(clear === true) {
-        localStorage.clear();
+        window.localStorage.clear();
         $('textarea').val('');
     };
-    
 });
