@@ -2,9 +2,10 @@
 :root {
     --lightest: #ffffff;
     --past: #d3d3d3;
-    --current: #f1d472;
-    --future: #77dd77;
-    --savebtn: #06aed5;
+    --current: #77dd77;
+    --future:  #84A98C;
+    --savebtn: #773344;
+    --btn: #66101F;
     --darkest: #000000;
 }
 
@@ -51,6 +52,8 @@ textarea {
     background-color: var(--lightest);
     color: var(--darkest);
     border-top: 1px dashed var(--darkest);
+    font-weight: bold;
+    padding-top: 5px;
 }
 
 /* box color styling */
@@ -86,6 +89,8 @@ textarea {
 .btn {
     margin: 20px;
     border-radius: 15px;
+    background-color: var(--btn);
+    color: var(--lightest);
 }
 
 .btn:hover {

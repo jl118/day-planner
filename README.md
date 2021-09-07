@@ -12,4 +12,4 @@ At the bottom of the page is a 'Clear Schedule' button that will prompt the user
 
 ## Layout
 
-![Desktop layout of the Day Planner showing _____](./assets/images/__________)
+![Desktop layout of the Day Planner highlighting the 12pm to 1pm time slot, matching the time displayed at the top of the page.](./assets/images/planner_desktop.png)
